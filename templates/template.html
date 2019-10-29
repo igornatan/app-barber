@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Barbearia Alura</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/0299db35a2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+		<header>
+			<div class="caixa">
+				<h1><img src="/static/images/logo.png"></h1>
+				<nav>
+					<ul>
+						<li><a href="{{ url_for('index') }}">Home</a></li>
+						<li><a href="{{ url_for('produtos') }}">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul id="messages" class="list-unstyled">
+                {% for message in messages %}
+                    <li class="alert alert-success">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <div class="page-header">
+            <h1>{{ titulo }}</h1>
+        </div>
+        {% block conteudo %}{% endblock %}
+        </div>
+    <footer>
+        <img src="/static/images/logo-branco.png">
+        <p class="copyright"><i class="far fa-copyright"></i> Copyright Barbearia Alura - 2019</p>
+    </footer>
+  </body>
+</html>

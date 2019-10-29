@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block conteudo %}
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="/static/images/cabelo.jpg">
+                    <p class="produtos-descricao">Na tesoura ou na máquina, como o cliente preferir</p>
+                    <p class="produtos-preco">R$ 30,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="/static/images/barba.jpg">
+                    <p class="produtos-descricao">Corte e desenho profissional de barba</p>
+                    <p class="produtos-preco">R$ 20,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="/static/images/cabelo+barba.jpg">
+                    <p class="produtos-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produtos-preco">R$ 40,00</p>
+                </li>
+            </ul>
+        </main>
+{% endblock %}
