@@ -12,6 +12,9 @@ def index():
 def produtos():
     return render_template('produtos.html')
 
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
