@@ -36,6 +36,18 @@ nav a:hover {
     color: brown;
 }
 
+.agendar {
+	text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+	text-decoration: none;
+}
+
+.agendar:hover{
+	color: #FF0000;
+}
+
 /* .principal{
 	background: white;
 	padding: 30px;
@@ -47,6 +59,16 @@ nav a:hover {
 	color: white;
 	font-size: 40px;
 	text-align: center;
+}
+
+.titulo-beneficios{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 30px;
+	position: relative;
+	left: 120px;
+	top: 0px;
 }
 
 .titulo-centralizado {
@@ -68,58 +90,49 @@ em strong {
 
 .itens {
 	font-style: italic;
-	font-size: 20px;
+	font-size: 30px;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 35px;
-	margin: 20px;
+.beneficios{
+    width: 940px;
+    margin: 0 auto;
+	padding: 50px 0;
+
+}
+
+.itens:hover{
+	font-size: 25px;
 }
 
 .lista-itens {
 	position: relative;
-	display: inline-block;
-	left: 900px;
-	top: 70px;
-	/* vertical-align: top; */
-	width: 20%;
-	/*margin-right: 15%;*/
-	margin-left: 30px;
-	list-style-type: disc;
-
-	
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+	left: 600px;
+	top: -150px;
+    text-align: center;
+    width: 60%;
+    padding: 30px 20px;
+	margin: 2% -7%;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+    border-radius: 10px;
 }
 
 .principal{
-	/*Novamente definimos a largura da div*/
-	width:500px;
-	/* altura da div */
 	height:300px;
-	/* O atributo Float é utilizado para fazermos o nosso bloco(div) 
-	literalmente flutue e se posicione onde queremos na página, 
-	quando escolhemos left, dizemos que esse bloco irá se posicionar na 
-	parte esquerda da página */
 	float:left;
-	/* Cor de fundo da div */
 	background: white;
 
 	/* display: inline-block; */
     text-align: center;
-    vertical-align: top;
-    box-sizing: border-box;
     padding: 30px 20px;
     margin: 0 1.5%;
-    border: 2px solid #000000;
-	border-radius: 10px;
-	
-	
+
     width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+    margin: 10px 10px;
+	
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
 
 .imagembeneficios {
